@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Results</h2>
+    <h4>Part One</h4>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Time Ref</th>
+            <th scope="col">Trade Value</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        {% for result in resultsPartOne %}
+        
+            <tr>
+                <td>{{result['time_ref']}}</td>
+                <td>{{result['tradeValue']}}</td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <h4>Part Two</h4>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Country Label</th>
+            <th scope="col">Product Type</th>
+            <th scope="col">Status</th>
+            <th scope="col">Trade Deficit Value</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        {% for result in resultsPartTwo %}
+        
+            <tr>
+                <td>{{result['country_label']}}</td>
+                <td>{{result['product_type']}}</td>
+                <td>{{result['status']}}</td>
+                <td>{{result['deficit']}}</td>
+            </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
