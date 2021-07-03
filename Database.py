@@ -14,9 +14,9 @@ class Database:
         query_job = self.client.query(
         """
         SELECT time_ref, SUM(value) AS tradeValue
-        FROM task2.gsquarterlySeptember20
+        FROM `cc-ass1-bigquery.task2.gsquarterlySeptember20`
         GROUP BY time_ref
-        ORDER BY SUM(value) DESC
+        ORDER BY tradeValue DESC
         LIMIT 10
         """
         )
