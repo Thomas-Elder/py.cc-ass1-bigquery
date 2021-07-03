@@ -2,6 +2,26 @@
 
 {% block content %}
 <div class="container">
-    Index
+    <h3>Task-2</h3>
+    <h5>Queries</h5>
+    <ol>
+        <li>
+            Show top 10 time slots (year and month) with the highest trade value (i.e. import value + export 
+            value). 2 marks
+            Note: Show “time_ref” and “trade value” in your results.
+        </li>
+        <li>
+            Show top 50 countries with the highest total trade deficit value (i.e. import value - export value) of 
+            goods from 2014 to 2016 where status is “F”. 2 marks
+            Note: Show “country_label” (full country name), “product_type”, “trade deficit value” (in a 
+            descending order), and “status” in your result.
+        </li>
+        <li>
+            Show top 30 services with the highest total trade surplus value (i.e. export value - import value) in the 
+            top 10 time slots of Query Result 1 and the top 50 countries of Query Result 2. 2 marks
+            Note: Show “service_label” (full service name) and “trade surplus value” (in a descending order) in your 
+            result.
+        </li>
+    </ol>
 </div>
 {% endblock %}
